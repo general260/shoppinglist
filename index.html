@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.4.1/cyborg/bootstrap.min.css">
+    <title>Shopping List</title>
+</head>
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <h4>My Shopping List</h4>
+            <div class="form-group">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Item..."   id="filter">
+            </div>  
+        </div>
+    </nav>
+    <br>
+    <div class="container" id="add">
+        <h4>Add Item</h4>
+        <div class="form-group">
+            <form id="addForm" class="form-inline mb-3">            
+                <input id="item" class="form-control mr-sm-2" type="text" placeholder="Enter Item">
+                <button class="btn btn-success" type="submit" value="Submit">Add</button>
+            </form>
+        </div>
+    </div>
+    
+    <br>
+    <div class="card border-secondary mb-3" style="max-width: 100rem;">
+        <div class="card-header"><h5>Shopping List Items</h5><button id="clearList" class="btn btn-danger" type="button" value="Remove">Clear List</button></div>
+        <div class="card-body">
+            <ul id="items" class="list-group">
+                <li class="list-group-item">Milk <button type="button" class="btn btn-danger btn-sm float-right delete">X</button></li>
+                <li class="list-group-item">Beer <button type="button" class="btn btn-danger btn-sm float-right delete">X</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    
+</body>
+<script src="test.js"></script>
+</html>
